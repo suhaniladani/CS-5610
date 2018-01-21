@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title> HW02 task 2 </title>
+	<style>
+	#footer{left:0;bottom:0;width:100%;position:fixed}
+	</style>
+  </head>
+<body>
+
+   <h1 id = "currentValue"> 10 </h1>
+
+   <div>
+	<button onClick = "alertNumber()"> Alert</button>
+	<button onClick = "incrementValue()">Increment</button>
+	<button onClick = "display()">Display</button>
+   </div>
+
+<div id="footer"></div>
+
+<script>
+
+function incrementValue()
+{
+    var h = document.getElementById('currentValue');
+    var value = parseInt(h.innerHTML);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('currentValue').innerHTML = value;
+}
+
+
+function alertNumber()
+{
+   var val = document.getElementById("currentValue");
+   alert(val.innerHTML);
+}
+
+function display(){
+   var f = document.getElementById('footer');
+   var p = document.createElement('p');
+   var b = document.createTextNode(document.getElementById("currentValue").innerHTML + " ");
+   p.appendChild(b);
+   f.appendChild(p);
+
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>  HW 02 task 3 </title>
+    <style>
+
+    #displayTable{
+      display:table;
+      width: 70%;
+      border: dashed;
+    }
+
+    #tableHeader {
+      font-width: bold;
+      text-align: center;
+      padding: 15px;
+    }
+
+    #firstColumn{
+      width: 33%;
+      display: inline-block;
+      text-align: center;
+    }
+
+    #secondColumn{
+      float:right;
+      width: 66%;
+      text-align: left;
+      border-left: dashed;
+    }
+
+  </style>
+  </head>
+  <body>
+
+    <div id = "displayTable" >
+      <div id = "tableHeader" > HW02 Task 3</div>
+      <div id = "tableBody">
+        <div id = "firstColumn">
+          <span id = "" onClick = "displayText('LoremIpsum')"> Lorem Ipsum </span>
+          <br>
+          <span id = "Bottles" onClick = "displayText('Bottles')"> 99 Bottles </span>
+          <br>
+          <span id = "third" onClick = "displayText('third')"> Third Thing </span>
+          <br>
+        </div>
+        <div id = "secondColumn">
+          <span id = "LoremIpsumText" style = "display: block;">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit mi accumsan ornare luctus. Morbi a felis arcu. Nam non metus sollicitudin, interdum quam non, mollis leo. Maecenas interdum egestas aliquet. In varius rutrum purus. Donec vulputate maximus dui, nec efficitur eros interdum et. Pellentesque ac tortor augue. Vestibulum in tincidunt eros. Curabitur scelerisque justo neque, eu placerat leo cursus vel. Nullam malesuada fringilla ligula, ac ornare justo laoreet vel. Nulla volutpat vestibulum libero eget gravida. Nullam eu suscipit nibh. Integer laoreet a purus sed lobortis. Etiam quis volutpat massa, non consectetur nulla. Sed lectus eros, suscipit vel maximus quis, euismod eu neque.  </p>
+            <p> Praesent dolor mi, hendrerit sed molestie quis, fringilla eget mi. In sit amet pellentesque justo. Morbi vitae lorem eu enim mattis rutrum. Pellentesque imperdiet, nisl sed congue fringilla, ex mauris ullamcorper tellus, et maximus sem nisl ac eros. Donec tristique ligula ut massa vestibulum blandit. Pellentesque eu purus ex. Suspendisse et velit suscipit sapien viverra egestas. Pellentesque tellus tellus, malesuada nec libero eu, luctus tempus sapien. Morbi eget tristique justo. Integer laoreet sem vel ligula pharetra, eget bibendum urna dapibus. </p>
+            <p> Integer suscipit massa ac justo pharetra vehicula. Praesent tincidunt tristique porttitor. Curabitur quis rutrum enim. Fusce eget tempor nibh. Praesent mattis libero eros. Donec id augue nisi. Maecenas ante augue, tincidunt et lectus et, ultrices pharetra arcu. Ut malesuada elit sit amet nibh auctor, sed dignissim est molestie. Nam maximus vestibulum ex quis scelerisque. Phasellus eget vehicula ligula. Nulla facilisi. Aliquam aliquam nulla eu tellus sodales, aliquet tempor elit molestie. Curabitur sit amet sollicitudin ligula. </p>
+            <p> Donec at lacus cursus augue interdum blandit. Nulla tincidunt ut est eu egestas. Pellentesque nec tellus quis purus aliquam mattis. Morbi id consequat mi, et tristique augue. Pellentesque tellus dui, fringilla a odio at, egestas ullamcorper ante. Phasellus tempus eleifend est vel convallis. Donec velit felis, tincidunt et mattis vitae, lacinia non magna. In hac habitasse platea dictumst. Donec vehicula tellus tellus, eu tincidunt metus consectetur ac. Nam varius et purus non mollis. </p>
+          </span>
+
+          <span id = "BottlesText" style = "display: none;">
+            <p> 99 bottles of beer on the wall, 99 bottles of beer.
+              Take one down, pass it around, 98 bottles of beer on the wall... </p>
+              <p> No more bottles of beer on the wall, no more bottles of beer.
+                Go to the store and buy some more, 99 bottles of beer on the wall... </p>
+                <p> No more bottles of beer on the wall, no more bottles of beer.
+                  We've taken them down and passed them around; now we're drunk and passed out! </p>
+                  <p> If that one bottle should happen to fall, what a waste of alcohol! </p>
+                </span>
+                <span id = "thirdText" style = "display: none;">
+                  <p> this is the third thing </p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <script>
+          "use strict";
+          function displayText(x){
+            var a = document.getElementById("LoremIpsumText");
+            var b = document.getElementById("BottlesText");
+            var c = document.getElementById("thirdText");
+            if(x == "LoremIpsum"){
+
+              a.style.display = "block";
+              b.style.display = "none";
+              c.style.display = "none";
+            }
+
+            else if(x == "Bottles"){
+
+              a.style.display = "none";
+              b.style.display = "block";
+              c.style.display = "none";
+
+            }
+
+            else if (x == "third"){
+
+              a.style.display = "none";
+              b.style.display = "none";
+              c.style.display = "block";
+            }
+
+          }
+
+          </script>
+
+        </body>
+        </html>
