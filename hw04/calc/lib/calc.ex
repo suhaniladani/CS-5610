@@ -18,12 +18,17 @@ defmodule Calc do
     end
   end
 
+  #remove the spaces in the equation given by the user
+  #send the input to the next function calculate 
+
   def eval(equation) do
     "(#{equation})"
     |> String.replace(" ", "")
     |> calculate(:found)
   end
 
+  # condition on atom :found and :not_found
+  
   defp calculate(equation, type) do
     cond do
       type == :not_found -> equation
@@ -39,6 +44,9 @@ defmodule Calc do
 
 
   defp eval_operation(eq, op,  :found), do: eval_operation(compute_eq(eq, op), op, :proceed)
+
+  # perform the arithmetic operation according to the 
+  # BODMAS rule 
 
   defp eval_operation(eq, op, :not_found) do
     cond do
@@ -66,6 +74,8 @@ defmodule Calc do
     |> round
   end
 
+  # search for regex and match the pattern
+  # atom :found if true and :not_found if false
 
   defp pattern(regex, eq) do
     cond do
