@@ -1,0 +1,35 @@
+<h2>Show Task</h2>
+
+<ul>
+
+  <li>
+    <strong>Assigned To:</strong>
+    <%= @task.user.name %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @task.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @task.description %>
+  </li>
+
+  <li>
+    <strong>Time:</strong>
+    <%= @task.begin_time %>
+  </li>
+
+  <li>
+    <strong>Completed:</strong>
+    <%= @task.completed %>
+  </li>
+
+</ul>
+
+<span><%= link "Go to Tasks", to: task_path(@conn, :index), class: "btn btn-default btn-xs" %>  &nbsp; </span>
+<span><%= link "Edit", to: task_path(@conn, :edit, @task), class: "btn btn-default btn-xs" %>  &nbsp; </span>
+<span><%= link "Back", to: task_path(@conn, :index), class: "btn btn-default btn-xs" %> &nbsp </span>
+<span><%= link "Show users", to: user_path(@conn, :index), class: "btn btn-default btn-xs" %></span>

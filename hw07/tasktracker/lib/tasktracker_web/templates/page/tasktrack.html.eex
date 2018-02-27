@@ -1,0 +1,41 @@
+
+
+<%= if @current_user do %>
+  <div class = "col">
+    <div class = "row">
+    <div align = 'left'>
+    <span>
+    <%= link "Go to Tasks", to: task_path(@conn, :index), class: "btn btn-default btn-s" %>
+    </span>
+    </div>
+      <%= render TasktrackerWeb.TaskView,
+      "form.html", Map.put(assigns, :action, task_path(@conn, :create)) %>
+    </div>
+  </div>
+<% end %>
+
+
+<h1> Task Track </h1>
+
+<%= Enum.map @tasks, fn task -> %>
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class = "row", style = "margin:3px">
+  <div class = "col">
+    <div class = "card">
+      <div class= "card-body">
+        <h6 class = "card-title">
+        <p style="text-align:left;">
+          <%= task.user.name %>
+          <span style="float:right;"> completed status: <%= task.completed %></span>
+          </p>
+        <p><%= task.title %></p>
+        <p><%= task.description %></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+        </h6>
+</div>
+<% end %>
