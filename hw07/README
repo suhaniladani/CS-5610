@@ -1,0 +1,12 @@
+attribution:
+http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/12-microblog/notes.html
+
+Design choices:
+
+-The following design choices have been made:
+-Followed many to many relationship for the manager and employee.
+-One managers manage many employees and one employee could be managed by many managers.
+-Added the button to go to the tasklist page
+-When the show user button(for his own profile) is pressed by the person who has logged in, it shows the list of employees that he manages.
+-The task feed shows the tasks of the user who is currently logged in, i.e. it only shows his/her own tasks. 
+

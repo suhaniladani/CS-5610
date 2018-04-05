@@ -1,0 +1,20 @@
+<!-- Attribution -->
+<!-- http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/12-microblog/notes.html -->
+
+<div class="row">
+  <div class = "col">
+    <h1>Tasktracker: Log in</h1>
+      <%= form_tag("/session", method: :post) do %>
+      <div class = "form-group">
+        Email
+        <input type="email" name="email" placeholder="user@example.com">
+      </div>
+
+      <!-- TODO: Add passwords after the password security lecture -->
+      <div class="form-group">
+        <button class="btn btn-primary">Log in</button>
+        <%= link "Register", to: user_path(@conn, :new) %>
+      </div>
+      <% end %>
+  </div>
+</div>

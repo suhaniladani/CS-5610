@@ -1,0 +1,9 @@
+The following points were kept in mind:
+- It is considered that the portal could be used by multiple people for a communication during project. So each of them needs to see the tasks given to other and vice-versa.
+- Every page has a button from which the user can go to the Task table page, which allows flexibility to the user in switching to the tasks page from everywhere.
+- When the new user registers, he can go to the tasks page.
+- While creating a task, there is an option for user to view the user list in order to assign the task using the user id.
+- As soon as the user logs in, he can view the tasks list(along with the completion status) below and also assign a task on the same page. (The page provides the form for assigning the task above the tasks list). This would give him an idea of current tasks status, and he/she can assign task according to that.
+- The time could be entered in the interval of 0.25 hours, which is 15 minutes.
+- If he wants to mark a task as completed or edit the time, he can go to the edit page and mark the status as complete and enter the time he has worked on the task.
+- Task status is displayed in terms of boolean where true means task is completed and false means task is not completed. 
