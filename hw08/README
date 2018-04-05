@@ -1,0 +1,16 @@
+
+Tasktracker Single page application, I have provided text field for completed,
+to enable any comments that user might want to put along with the completed 
+field.
+User and password authentication with https secure server is provided
+New Task is created and seen on the same page below.
+New user entry could be seen in Users
+All the tasks could be seen in tasks. 
+
+
+Attribution:
+http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/01-intro/notes.html
+http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/17-passwords/notes.html
+http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/17-passwords/user.ex
+http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/19-spa/notes.html
+http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/20-redux/notes.html
