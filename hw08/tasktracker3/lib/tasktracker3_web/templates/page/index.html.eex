@@ -1,0 +1,15 @@
+<script>
+/*
+window.state0 = {
+  tasks: [...],
+  users: [...],
+  current_user: {
+    token: Phoenix.Token.sign(...)
+  }
+}
+*/
+</script>
+
+<div id='root'>
+  requires js
+</div>
